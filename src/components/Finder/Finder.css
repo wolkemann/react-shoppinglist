@@ -1,5 +1,6 @@
 .Finder__title {
   margin: var(--title-margin);
+  text-align: center;
 }
 
 .Finder__searchInput {

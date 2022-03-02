@@ -1,3 +1,10 @@
 .ShoppingList__title {
   margin: var(--title-margin);
+  text-align: center;
+}
+
+.ShoppingList__list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }

@@ -1,0 +1,14 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(0 0 0 / 20%);
+}
+
+.logo {
+  width: 80px;
+}

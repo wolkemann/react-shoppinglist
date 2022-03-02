@@ -8,12 +8,15 @@
 
 body {
   font-family: 'Source sans pro', sans-serif;
+  font-size: 20px;
 }
 
 main {
   margin: 2rem;
+  margin-top: 6rem;
 }
 
 section {
+  width: 100%;
   margin: 2rem 0;
 }
