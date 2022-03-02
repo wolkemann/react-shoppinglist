@@ -1,0 +1,9 @@
+.Finder__title {
+  margin: var(--title-margin);
+}
+
+.Finder__searchInput {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
