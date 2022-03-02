@@ -4,7 +4,10 @@
 }
 
 .Finder__searchInput {
-  width: 100%;
+  width: 80vw;
+  display: block;
+  margin: auto;
   font-size: 1.5rem;
   padding: 0.5rem;
+  box-shadow: 0 0 8px rgba(0 0 0 / 20%);
 }
