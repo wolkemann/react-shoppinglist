@@ -8,10 +8,12 @@
 
 body {
   font-family: 'Source sans pro', sans-serif;
+  background-color: #ffe4c0;
 }
 
 main {
   display: flex;
+
   flex-flow: column wrap;
   margin: 1rem;
   margin-top: 3rem;

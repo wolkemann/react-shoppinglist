@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { items as database } from './db.jsx';
+import { items as listDB } from './db.jsx';
 import './css/App.css';
 import './css/variables.css';
 
@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <main>
-        <ShoppingList />
+        <ShoppingList productList={listDB} />
         <Finder />
       </main>
     </>
