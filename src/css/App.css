@@ -22,3 +22,36 @@ section {
   margin: 1rem 0;
   margin-bottom: 0;
 }
+
+.ShoppingList__title {
+  margin: var(--title-margin);
+  text-align: center;
+}
+
+.ShoppingList__list {
+  display: flex;
+  height: 48vh;
+  overflow-y: auto;
+  flex-flow: column;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.ShoppingList__mama {
+  display: block;
+  width: 310px;
+}
+
+.ShoppingList__emptyText {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ShoppingItem {
+  background-color: whitesmoke;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(0 0 0 / 20%);
+  padding: 0.5rem;
+}
