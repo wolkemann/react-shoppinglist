@@ -6,9 +6,12 @@
 .ShoppingList__list {
   display: flex;
   height: 46.8vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   flex-flow: column;
   gap: 0.5rem;
-  margin-top: 0.3rem;
-  padding: 0.5rem 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.ShoppingList__mama {
+  width: 300px;
 }

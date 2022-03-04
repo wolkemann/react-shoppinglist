@@ -1,5 +1,6 @@
 .Header {
   position: fixed;
+  padding: 0.5rem;
   background-color: #ffbbbb;
   top: 0;
   width: 100%;
@@ -15,5 +16,5 @@
 }
 
 .Header__title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }

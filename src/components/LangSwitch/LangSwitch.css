@@ -1,12 +1,16 @@
 .LangSwitch {
   display: flex;
+  background-color: darkgray;
+  gap: 0.5rem;
   position: fixed;
-  margin: 0.5rem;
   bottom: 0;
   left: auto;
+  margin: 0.5rem;
   box-shadow: 0 0 8px rgba(0 0 0 / 20%);
+  border-radius: 2px;
 }
 
 .LangSwitch__button {
-  background-color: gray;
+  background-color: white;
+  padding: 1rem;
 }
