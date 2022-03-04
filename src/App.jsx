@@ -6,6 +6,7 @@ import './css/variables.css';
 import { Header } from './components/Header/Header.jsx';
 import { ShoppingList } from './components/ShoppingList.jsx';
 import { Finder } from './components/Finder/Finder.jsx';
+import { LangSwitch } from './components/LangSwitch/LangSwitch.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main>
         <ShoppingList productList={listDB} />
         <Finder />
+        <LangSwitch />
       </main>
     </>
   );
