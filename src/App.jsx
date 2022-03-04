@@ -2,7 +2,7 @@
 Importing base CSS and Images
 */
 import './css/App.css';
-
+import './css/shoppingList.css';
 import './css/variables.css';
 import mama from './components/homeIcon-trimmy.png';
 
