@@ -10,7 +10,6 @@ Importing Components
 import { Header } from './components/Header/Header.jsx';
 import { ShoppingList } from './components/ShoppingList.jsx';
 import { Finder } from './components/Finder/Finder.jsx';
-import { LangSwitch } from './components/LangSwitch/LangSwitch.jsx';
 
 /*
 Importing React API and APP constant
@@ -35,7 +34,6 @@ function App() {
       <main>
         <ShoppingList productList={shoppingChart} />
         <Finder formEventHandler={handleFinderPressEnter} />
-        <LangSwitch />
       </main>
     </>
   );
