@@ -1,16 +1,15 @@
 /*
-Importing base CSS and Images
+Importing base CSS
 */
 import './css/App.css';
-
 import './css/variables.css';
-import mama from './components/homeIcon-trimmy.png';
 
 /*
 Importing Components
 */
 import { Header } from './components/Header/Header.jsx';
 import { Finder } from './components/Finder/Finder.jsx';
+import { ShoppingList } from './components/ShoppingList/ShoppingList.jsx';
 
 /*
 Importing React API and APP constant
@@ -42,37 +41,10 @@ function App() {
     <>
       <Header />
       <main>
-        <section>
-          <div className="ShoppingList__list">
-            {shoppingChart.length === 0 ? (
-              <div>
-                <img src={mama} className="ShoppingList__mama" />
-                <p className="ShoppingList__emptyText">
-                  Nothing to buy, Mama si angry.
-                </p>
-              </div>
-            ) : (
-              shoppingChart.map(element => {
-                return (
-                  <div
-                    key={element.id}
-                    className="ShoppingItem"
-                    onClick={() => {
-                      setShoppingChart(() => {
-                        return shoppingChart.filter(a => {
-                          console.log(a.id, element.id);
-                          return a.id !== element.id;
-                        });
-                      });
-                    }}
-                  >
-                    {element.name}
-                  </div>
-                );
-              })
-            )}
-          </div>
-        </section>
+        <ShoppingList
+          currentShoppingItems={shoppingChart}
+          handleSingleItem={setShoppingChart}
+        />
         <Finder formEventHandler={handleFinderPressEnter} />
       </main>
     </>
