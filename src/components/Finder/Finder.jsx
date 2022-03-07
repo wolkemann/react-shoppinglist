@@ -9,7 +9,6 @@ export function Finder({ formEventHandler }) {
           type="text"
           name="addInput"
           className="Finder__searchInput"
-          maxLength="25"
           placeholder="(Spaghetti, Apples, Meat...)"
           required
         />

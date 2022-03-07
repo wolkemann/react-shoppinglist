@@ -5,12 +5,12 @@ export function ShoppingList({ currentShoppingItems, handleSingleItem }) {
   return (
     <section className="ShoppingList__list">
       {currentShoppingItems.length === 0 ? (
-        <div>
-          <img src={mama} className="ShoppingList__mama" />
-          <p className="ShoppingList__emptyText">
+        <figure>
+          <img src={mama} className="ShoppingList__mama" alt="Mama is angry" />
+          <figcaption className="ShoppingList__emptyText">
             Nothing to buy, Mama si angry.
-          </p>
-        </div>
+          </figcaption>
+        </figure>
       ) : (
         currentShoppingItems.map(element => {
           return (
@@ -20,8 +20,7 @@ export function ShoppingList({ currentShoppingItems, handleSingleItem }) {
               onClick={() => {
                 handleSingleItem(() => {
                   return currentShoppingItems.filter(a => {
-                    console.log(a.id, element.id);
-                    return a.id !== element.id;
+                    a.id !== element.id;
                   });
                 });
               }}

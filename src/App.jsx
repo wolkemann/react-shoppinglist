@@ -30,10 +30,14 @@ function App() {
 
   function handleFinderPressEnter(e) {
     e.preventDefault();
-    setShoppingChart([
-      { id: shoppingChart.length + 1, name: e.target.addInput.value },
-      ...shoppingChart,
-    ]);
+    let newArray = e.target.addInput.value
+      .trim()
+      .split(',')
+      .map(element => {
+        return { id: shoppingChart.length + 1, name: element };
+      });
+
+    setShoppingChart([...newArray, ...shoppingChart]);
     e.target.reset();
   }
 
