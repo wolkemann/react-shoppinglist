@@ -30,14 +30,18 @@ function App() {
 
   function handleFinderPressEnter(e) {
     e.preventDefault();
-    let newArray = e.target.addInput.value
+    const newArray = e.target.addInput.value
       .trim()
       .split(',')
       .map(element => {
         return { id: shoppingChart.length + 1, name: element };
       });
 
-    setShoppingChart([...newArray, ...shoppingChart]);
+    const filteredArray = newArray.map(toCompare => {
+      return shoppingChart.filter(element => toCompare.name !== element.name);
+    });
+
+    setShoppingChart([...filteredArray, ...shoppingChart]);
     e.target.reset();
   }
 
