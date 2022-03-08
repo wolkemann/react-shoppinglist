@@ -1,6 +1,4 @@
-import { template } from '@babel/core';
 import React from 'react';
-
 import { Finder } from './Finder';
 
 export default {

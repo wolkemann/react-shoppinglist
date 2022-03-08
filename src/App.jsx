@@ -25,25 +25,9 @@ function App() {
   });
 
   useEffect(() => {
+    console.log(shoppingChart);
     localStorage.setItem('shoppingChart', JSON.stringify(shoppingChart));
   }, [shoppingChart]);
-
-  function handleFinderPressEnter(e) {
-    e.preventDefault();
-    const newArray = e.target.addInput.value
-      .trim()
-      .split(',')
-      .map(element => {
-        return { id: shoppingChart.length + 1, name: element };
-      });
-
-    const filteredArray = newArray.map(toCompare => {
-      return shoppingChart.filter(element => toCompare.name !== element.name);
-    });
-
-    setShoppingChart([...filteredArray, ...shoppingChart]);
-    e.target.reset();
-  }
 
   return (
     <>
@@ -53,7 +37,10 @@ function App() {
           currentShoppingItems={shoppingChart}
           handleSingleItem={setShoppingChart}
         />
-        <Finder formEventHandler={handleFinderPressEnter} />
+        <Finder
+          shoppingChart={shoppingChart}
+          setShoppingChart={setShoppingChart}
+        />
       </main>
     </>
   );

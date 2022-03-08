@@ -20,7 +20,7 @@ export function ShoppingList({ currentShoppingItems, handleSingleItem }) {
               onClick={() => {
                 handleSingleItem(() => {
                   return currentShoppingItems.filter(a => {
-                    a.id !== element.id;
+                    return a.name !== element.name;
                   });
                 });
               }}
